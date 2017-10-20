@@ -5,6 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'rails-i18n'
+gem 'foreman'
+gem 'devise'
+gem 'devise-i18n'
+gem 'bootstrap_sb_admin_base_v2'
+gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,6 +41,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rails-erd'
 end
 
 group :development do
