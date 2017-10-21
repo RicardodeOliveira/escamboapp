@@ -6,6 +6,9 @@ Rails.application.configure do
     host = ENV["SSH_CLIENT"].match(/\A([^\s]*)/)[1]
     BetterErrors::Middleware.allow_ip! host if host
   end
+
+  config.web_console.whitelisted_ips = ENV['TRUSTED_IP']
+
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # In the development environment your application's code is reloaded on
