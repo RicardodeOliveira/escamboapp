@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Escamboapp</title>
+    <title>BackOffice - Escamboapp</title>
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
       <%= stylesheet_link_tag    'backoffice', media: 'all', 'data-turbolinks-track' => true %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -28,6 +28,7 @@
 <body>
 
     <div id="wrapper">
+        <%= render partial: "layouts/backoffice_shared/navigation" %>
         <%= yield %>
     </div>
 
