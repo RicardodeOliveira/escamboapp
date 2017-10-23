@@ -6,8 +6,18 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  2.3.5
 
 * System dependencies
+gems
+gem 'sqlite3'
+gem 'rails-i18n'
+gem 'foreman'
+gem 'devise'
+gem 'devise-i18n'
+gem 'bootstrap_sb_admin_base_v2'
+gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 
 * Configuration
 

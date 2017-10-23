@@ -10,8 +10,11 @@ gem 'foreman'
 gem 'devise'
 gem 'devise-i18n'
 gem 'bootstrap_sb_admin_base_v2'
-gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap', '3.3.7'
+  gem 'rails-assets-notifyjs'
+  gem 'rails-assets-bootbox'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,6 +53,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'faker'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
